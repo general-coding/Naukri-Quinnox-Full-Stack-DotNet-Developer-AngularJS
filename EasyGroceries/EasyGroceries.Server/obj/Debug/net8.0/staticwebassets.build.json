@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "HecUDN0gTrZSI31E26qluTaPxSoaoT7WyW6JPWcCP8M=",
+  "Source": "EasyGroceries.Server",
+  "BasePath": "_content/EasyGroceries.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\easygroceries.client.esproj",
+      "Version": 2,
+      "Source": "easygroceries.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
