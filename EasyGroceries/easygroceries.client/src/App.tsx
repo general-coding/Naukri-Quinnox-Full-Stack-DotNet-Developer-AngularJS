@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Product, OrderLine, Order, ShippingSlip } from './models';
+import { Order, OrderLine, Product, ShippingSlip } from './models';
+import CheckoutScreen from './screens/checkoutScreen';
+import OrderScreen from './screens/orderScreen';
+import ProductListScreen from './screens/productListScreen';
 import { getProducts, submitOrder } from './services/api';
-import './App.css';
 
 const App: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);
@@ -9,6 +11,7 @@ const App: React.FC = () => {
     const [shippingInfo, setShippingInfo] = useState('');
     const [includeLoyalty, setIncludeLoyalty] = useState(false);
     const [shippingSlip, setShippingSlip] = useState<ShippingSlip | null>(null);
+    const [orderTotal, setOrderTotal] = useState<number>(0);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -40,11 +43,16 @@ const App: React.FC = () => {
         if (includeLoyalty) {
             total = total * 0.8 + 5;
         }
-        return total;
+        return formatCurrency(total);
     };
 
     const handleSubmit = async () => {
         if (!shippingInfo.trim()) return;
+
+        const totalAmount = basket.reduce((sum, line) => sum + line.product.price * line.quantity, 0);
+        const finalTotal = includeLoyalty ? totalAmount * 0.8 + 5 : totalAmount;
+        setOrderTotal(finalTotal);
+
         const order: Order = {
             customerId: 1,
             shippingInfo,
@@ -63,65 +71,36 @@ const App: React.FC = () => {
     };
 
     return (
-        <div className="p-4 font-sans">
-            <h1 className="text-2xl font-bold mb-4">EasyGroceries</h1>
-
-            <table className="table table-striped" aria-labelledby="tableLabel">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {products && products.map(p => (
-                        <tr key={p.id}>
-                            <td>{p.name}</td>
-                            <td>{p.description}</td>
-                            <td>{p.price}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-
-            {/*<div className="grid grid-cols-2 gap-4">*/}
-            {/*    {products && products.map(p => (*/}
-            {/*        <div key={p.id} className="border p-4 rounded">*/}
-            {/*            <h2 className="text-lg font-semibold">{p.name}</h2>*/}
-            {/*            <p>{p.description}</p>*/}
-            {/*            <p>{formatCurrency(p.price)}</p>*/}
-            {/*            <button onClick={() => addToBasket(p)} className="mt-2 px-4 py-1 bg-green-600 text-white rounded">*/}
-            {/*                Add to Basket*/}
-            {/*            </button>*/}
-            {/*        </div>*/}
-            {/*    ))}*/}
-            {/*</div>*/}
-
-            <div className="mt-6">
-                <h2 className="text-xl font-semibold">Basket</h2>
-                {basket && basket.map((line, idx) => (
-                    <p key={idx}>{line.product.name} x{line.quantity}</p>
-                ))}
-                <label className="block mt-2">
-                    <input type="checkbox" checked={includeLoyalty} onChange={e => setIncludeLoyalty(e.target.checked)} /> Loyalty Membership ({formatCurrency(5)}, 20% off)
-                </label>
-                <input type="text" value={shippingInfo} onChange={e => setShippingInfo(e.target.value)} placeholder="Shipping address" className="border mt-2 p-2 w-full" />
-                <p className="mt-2 font-bold">Total: {formatCurrency(calculateTotal())}</p>
-                <button onClick={handleSubmit} className="mt-2 px-4 py-2 bg-blue-600 text-white rounded">Submit Order</button>
+        <div className="container text-center">
+            <div className="my-4">
+                <h1 className="display-5">EasyGroceries</h1>
             </div>
 
-            {shippingSlip && (
-                <div className="mt-6 border-t pt-4">
-                    <h2 className="text-xl font-bold">Shipping Slip</h2>
-                    <p>Order #: {shippingSlip.orderNumber}</p>
-                    <ul>
-                        {shippingSlip.shippedItems.map((item, idx) => (
-                            <li key={idx}>{item.product.name} x{item.quantity}</li>
-                        ))}
-                    </ul>
-                </div>
-            )}
+            <div className="d-flex justify-content-center align-items-center flex-column min-vh-100">
+                <ProductListScreen
+                    products={products}
+                    addToBasket={addToBasket}
+                    formatCurrency={formatCurrency}
+                />
+                <OrderScreen
+                    basket={basket}
+                    includeLoyalty={includeLoyalty}
+                    setIncludeLoyalty={setIncludeLoyalty}
+                    shippingInfo={shippingInfo}
+                    setShippingInfo={setShippingInfo}
+                    calculateTotal={calculateTotal}
+                    handleSubmit={handleSubmit}
+                    formatCurrency={formatCurrency}
+                />
+                {
+                    shippingSlip && (
+                        <CheckoutScreen
+                            shippingSlip={shippingSlip}
+                            formatCurrency={formatCurrency}
+                            total={orderTotal}
+                        />
+                    )}
+            </div>
         </div>
     );
 };

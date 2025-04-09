@@ -7,28 +7,8 @@
       "RelativeMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|solutionrelative:easygroceries.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\easygroceries\\easygroceries.client\\src\\services\\api.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|solutionrelative:easygroceries.client\\src\\services\\api.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\easygroceries\\easygroceries.client\\src\\models.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|solutionrelative:easygroceries.client\\src\\models.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76D147E1-2352-4A46-BADC-26A6B5032F95}|EasyGroceries.Server\\EasyGroceries.Server.csproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\easygroceries\\easygroceries.server\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76D147E1-2352-4A46-BADC-26A6B5032F95}|EasyGroceries.Server\\EasyGroceries.Server.csproj|solutionrelative:easygroceries.server\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76D147E1-2352-4A46-BADC-26A6B5032F95}|EasyGroceries.Server\\EasyGroceries.Server.csproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\easygroceries\\easygroceries.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76D147E1-2352-4A46-BADC-26A6B5032F95}|EasyGroceries.Server\\EasyGroceries.Server.csproj|solutionrelative:easygroceries.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\easygroceries\\easygroceries.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|solutionrelative:easygroceries.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76D147E1-2352-4A46-BADC-26A6B5032F95}|EasyGroceries.Server\\EasyGroceries.Server.csproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\easygroceries\\easygroceries.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76D147E1-2352-4A46-BADC-26A6B5032F95}|EasyGroceries.Server\\EasyGroceries.Server.csproj|solutionrelative:easygroceries.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\easygroceries\\easygroceries.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9E5AD77F-B713-8AC9-8529-0E2F5742695D}|easygroceries.client\\easygroceries.client.esproj|solutionrelative:easygroceries.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,45 +18,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "models.ts",
-              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\src\\models.ts",
-              "RelativeDocumentMoniker": "easygroceries.client\\src\\models.ts",
-              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\src\\models.ts",
-              "RelativeToolTip": "easygroceries.client\\src\\models.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-08T15:46:24.959Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\EasyGroceries.Server\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "EasyGroceries.Server\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\EasyGroceries.Server\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "EasyGroceries.Server\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:39:46.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\EasyGroceries.Server\\Program.cs",
-              "RelativeDocumentMoniker": "EasyGroceries.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\EasyGroceries.Server\\Program.cs",
-              "RelativeToolTip": "EasyGroceries.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:38:34.31Z",
+              "DocumentIndex": 1,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\src\\App.css",
+              "RelativeDocumentMoniker": "easygroceries.client\\src\\App.css",
+              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\src\\App.css",
+              "RelativeToolTip": "easygroceries.client\\src\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-09T08:21:22.171Z",
               "EditorCaption": ""
             },
             {
@@ -87,48 +45,9 @@
               "RelativeDocumentMoniker": "easygroceries.client\\src\\App.tsx",
               "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\src\\App.tsx",
               "RelativeToolTip": "easygroceries.client\\src\\App.tsx",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAFUAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-08T14:21:34.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\EasyGroceries.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "EasyGroceries.Server\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\EasyGroceries.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "EasyGroceries.Server\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwBcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:35:40.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "vite.config.ts",
-              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\vite.config.ts",
-              "RelativeDocumentMoniker": "easygroceries.client\\vite.config.ts",
-              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\vite.config.ts",
-              "RelativeToolTip": "easygroceries.client\\vite.config.ts",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-08T15:28:07.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "api.ts",
-              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\src\\services\\api.ts",
-              "RelativeDocumentMoniker": "easygroceries.client\\src\\services\\api.ts",
-              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\EasyGroceries\\easygroceries.client\\src\\services\\api.ts",
-              "RelativeToolTip": "easygroceries.client\\src\\services\\api.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-08T14:27:23.143Z",
+              "WhenOpened": "2025-04-09T08:21:20.045Z",
               "EditorCaption": ""
             }
           ]
