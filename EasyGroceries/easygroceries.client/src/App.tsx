@@ -12,14 +12,35 @@ const App: React.FC = () => {
     const [includeLoyalty, setIncludeLoyalty] = useState(false);
     const [shippingSlip, setShippingSlip] = useState<ShippingSlip | null>(null);
     const [orderTotal, setOrderTotal] = useState<number>(0);
+    const [backendReady, setBackendReady] = useState<boolean>(false);
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            const data = await getProducts();
-            setProducts(data);
+        const checkBackendAndLoad = async () => {
+            let attempts = 0;
+            const maxAttempts = 10;
+            const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+
+            while (attempts < maxAttempts) {
+                try {
+                    const data = await getProducts();
+                    setProducts(data);
+                    setBackendReady(true);
+                    break;
+                } catch (error) {
+                    attempts++;
+                    console.warn(`Backend not ready. Retrying... (${attempts}/${maxAttempts})`);
+                    await delay(1000);
+                }
+            }
+
+            if (attempts === maxAttempts) {
+                console.error('Failed to connect to backend after multiple attempts.');
+            }
         };
-        fetchProducts();
+
+        checkBackendAndLoad();
     }, []);
+
 
     const addToBasket = (product: Product) => {
         setBasket(prev => {
@@ -71,37 +92,51 @@ const App: React.FC = () => {
     };
 
     return (
-        <div className="container text-center">
-            <div className="my-4">
-                <h1 className="display-5">EasyGroceries</h1>
-            </div>
-
-            <div className="d-flex justify-content-center align-items-center flex-column min-vh-100">
-                <ProductListScreen
-                    products={products}
-                    addToBasket={addToBasket}
-                    formatCurrency={formatCurrency}
-                />
-                <OrderScreen
-                    basket={basket}
-                    includeLoyalty={includeLoyalty}
-                    setIncludeLoyalty={setIncludeLoyalty}
-                    shippingInfo={shippingInfo}
-                    setShippingInfo={setShippingInfo}
-                    calculateTotal={calculateTotal}
-                    handleSubmit={handleSubmit}
-                    formatCurrency={formatCurrency}
-                />
-                {
-                    shippingSlip && (
-                        <CheckoutScreen
-                            shippingSlip={shippingSlip}
+        <table className="table table-bordered w-75 text-start">
+            <thead className="table-light">
+                <tr>
+                    <th><h1>EasyGroceries</h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ProductListScreen
+                            products={products}
+                            addToBasket={addToBasket}
                             formatCurrency={formatCurrency}
-                            total={orderTotal}
                         />
-                    )}
-            </div>
-        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <OrderScreen
+                            basket={basket}
+                            includeLoyalty={includeLoyalty}
+                            setIncludeLoyalty={setIncludeLoyalty}
+                            shippingInfo={shippingInfo}
+                            setShippingInfo={setShippingInfo}
+                            calculateTotal={calculateTotal}
+                            handleSubmit={handleSubmit}
+                            formatCurrency={formatCurrency}
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {
+                            shippingSlip && (
+                                <CheckoutScreen
+                                    shippingSlip={shippingSlip}
+                                    formatCurrency={formatCurrency}
+                                    total={orderTotal}
+                                />
+                            )
+                        }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     );
 };
 
