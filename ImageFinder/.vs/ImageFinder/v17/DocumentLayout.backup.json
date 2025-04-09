@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\ImageFinder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1FEB20-129E-AD45-17AC-F592076BF94E}|imagefinder.esproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\imagefinder\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{4D1FEB20-129E-AD45-17AC-F592076BF94E}|imagefinder.esproj|solutionrelative:src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1FEB20-129E-AD45-17AC-F592076BF94E}|imagefinder.esproj|c:\\users\\puneeth\\source\\repos\\general-coding\\naukri-quinnox-full-stack-dotnet-developer-angularjs\\imagefinder\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{4D1FEB20-129E-AD45-17AC-F592076BF94E}|imagefinder.esproj|solutionrelative:src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\ImageFinder\\src\\App.tsx",
+              "RelativeDocumentMoniker": "src\\App.tsx",
+              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\ImageFinder\\src\\App.tsx",
+              "RelativeToolTip": "src\\App.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-04-09T09:00:34.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.tsx",
+              "DocumentMoniker": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\ImageFinder\\src\\main.tsx",
+              "RelativeDocumentMoniker": "src\\main.tsx",
+              "ToolTip": "C:\\Users\\Puneeth\\source\\repos\\general-coding\\Naukri-Quinnox-Full-Stack-DotNet-Developer-AngularJS\\ImageFinder\\src\\main.tsx",
+              "RelativeToolTip": "src\\main.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-04-09T09:00:27.654Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

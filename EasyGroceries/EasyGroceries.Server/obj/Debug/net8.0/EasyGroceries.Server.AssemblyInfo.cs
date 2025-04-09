@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EasyGroceries.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5010ae71ac56d29aba00c6b3a4b9e0bf869d1914")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+576339476803a514319dee458e87a93adbfa62db")]
 [assembly: System.Reflection.AssemblyProductAttribute("EasyGroceries.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EasyGroceries.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
